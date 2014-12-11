@@ -17,6 +17,6 @@ while True:
 		letter.replace("\r", "")
 		if letter != '\x08' and letter != '\x00': #some exeptions
 			if letter == chr(8): #untested is taken from the linux keyhandler
-				keyb.sendKeys({BS}, 0) #send keystroke
+				keyb.sendKeys({BS}) #send keystroke
 			else:
-				keyb.sendKeys(letter, 0) #send keystroke
+				keyb.sendKeys(letter) #send keystroke
